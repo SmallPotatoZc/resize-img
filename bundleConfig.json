@@ -1,0 +1,16 @@
+{
+  "fileInclude": [
+    "json",
+    "js"
+  ],
+  "dirExclude": [
+    "^node_modules/lodash/fp",
+    "^node_modules/qs/dist",
+    "^node_modules/require_optional",
+    "^dev_modules",
+    "test$"
+  ],
+  "fileExclude": [
+    "^node_modules/lodash/(?!lodash\\.js)"
+  ]
+}

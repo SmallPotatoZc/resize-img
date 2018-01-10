@@ -1,0 +1,6 @@
+{
+  "name":"resizeImg",
+  "display": "图片压缩",
+  "version": "1.0.0",
+  "db": "mongodb://127.0.0.1:27017"
+}

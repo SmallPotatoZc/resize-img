@@ -1,0 +1,11 @@
+{
+  "name": "resize-img",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "file-type": "^7.4.0",
+    "image-size": "^0.6.2",
+    "lodash": "^4.17.4",
+    "sharp": "^0.18.4"
+  }
+}
