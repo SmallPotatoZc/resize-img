@@ -12,5 +12,8 @@
   ],
   "fileExclude": [
     "^node_modules/lodash/(?!lodash\\.js)"
+  ],
+  "virtualJs":[
+    
   ]
 }
