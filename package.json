@@ -6,6 +6,7 @@
     "file-type": "^7.4.0",
     "image-size": "^0.6.2",
     "lodash": "^4.17.4",
-    "sharp": "^0.18.4"
+    "parameters": "^0.4.3",
+    "sharp": "^0.20.1"
   }
 }
