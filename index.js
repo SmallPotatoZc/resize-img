@@ -61,17 +61,21 @@ if (!args.help) {
     if (!fs.lstatSync(_path).isDirectory()) {
       _dir = path.dirname(_path);
     }
-    fs.watch(_dir, {recursive:true}, (eventType, filename) => {
+    fs.watch(_dir, {
+      recursive: true
+    }, (eventType, filename) => {
       if (filename) {
         let _tar = `${_dir}/${filename}`;
-        if(fs.existsSync(_tar) && !/-min\./g.test(filename)){
-          console.log('ddddd', _tar);
-          resizeImage(_tar);
+        try {
+          if (fs.existsSync(_tar) && !/-min\./g.test(filename)) {
+            resizeImage(_tar);
+          }
+        } catch (err) {
         }
       }
     });
   }
-}else{
+} else {
   console.log(params.help());
 }
 
@@ -117,7 +121,7 @@ function resizeImages(path) {
             return err;
           }
           if (result.isDirectory()) {
-            resizeImages(item, SIZE);
+            resizeImages(item);
           } else if (result.isFile()) {
             resize(item);
           }
