@@ -1,5 +1,4 @@
 const _ = require('lodash');
-const sizeOf = require('image-size');
 const fileType = require('file-type');
 const sharp = require('sharp');
 const fs = require('fs');
